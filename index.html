@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chocolate Day 💜🍫</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Floating hearts -->
+  <div class="hearts"></div>
+
+  <!-- PAGE 1 -->
+  <div class="page active" id="page1">
+    <h1>Chocolate Day Surprise 🍫💜</h1>
+    <p>Click pannunga da 😘</p>
+    <button class="btn" onclick="goToPage(2)">Eat Me 😋🍫</button>
+  </div>
+
+  <!-- PAGE 2 -->
+  <div class="page" id="page2">
+    <h1>Touch the KitKat 🍫🤌🏻</h1>
+    <p>Chocolate ah touch pannunga 😘</p>
+
+    <div class="choco-box">
+      <div class="wrapper" id="wrapper" onclick="openChocolate()">
+        <div class="cover">KITKAT</div>
+        <div class="chocolate" id="chocolate">
+          <div class="bar" id="bar1"></div>
+          <div class="bar" id="bar2"></div>
+          <div class="bar" id="bar3"></div>
+          <div class="bar" id="bar4"></div>
+        </div>
+      </div>
+    </div>
+
+    <p id="msg" class="msg">First touch = Open 🍫</p>
+    <button class="btn hidden" id="nextBtn" onclick="goToPage(3)">Next 💜</button>
+  </div>
+
+  <!-- PAGE 3 -->
+  <div class="page" id="page3">
+    <h1 class="final">Happy Chocolate Day mah 🍫💜</h1>
+    <p class="final-text">Nee iruka varaikum en life sweet ah irukum 😘🫂</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
